@@ -8,6 +8,11 @@
 
        steps:
          - uses: actions/checkout@v2
+         - name: Install g++
+           run: |
+             sudo apt-get update
+             sudo apt-get install g++
+
          - name: Set up CMake
            uses: lukka/get-cmake@v2
            with:
