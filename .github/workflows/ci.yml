@@ -41,3 +41,6 @@ jobs:
         with:
           name: TestResults
           path: build/Testing/Temporary
+
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
