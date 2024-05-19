@@ -15,6 +15,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install g++
 
+      - name: Set up Environment
+        run: echo "/home/runner/work/_temp/-1661514204/cmake-3.17.1-Linux-x86_64/bin/" >> $GITHUB_PATH
+
       - name: Set up CMake
         uses: lukka/get-cmake@v2
 
